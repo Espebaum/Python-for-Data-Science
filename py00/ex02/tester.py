@@ -11,3 +11,5 @@ all_thing_is_obj(ft_dict)
 all_thing_is_obj("Brian")
 all_thing_is_obj("Toto")
 print(all_thing_is_obj(10))
+
+# test py00 ex02 find_ft_type.py
