@@ -2,6 +2,8 @@ LICENSE.txt
 README.md
 pyproject.toml
 setup.py
+ft_package/__init__.py
+ft_package/count_in_list.py
 ft_package.egg-info/PKG-INFO
 ft_package.egg-info/SOURCES.txt
 ft_package.egg-info/dependency_links.txt

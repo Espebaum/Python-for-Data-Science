@@ -1,7 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='ft_package',
-    version='0.1.0',
-    packages=find_packages(include=['exampleproject', 'exampleproject.*'])
+    name="ft_package",
+    version="0.0.1",
+    description="A sample test package",
+    author="eagle",
+    author_email="eagle@42.fr",
+    url="https://github.com/eagle/ft_package",
+    license="MIT",
+    packages=find_packages(),  # 또는 `packages=find_packages(where='src')` if using a 'src/' layout
+    include_package_data=True,
+    python_requires='>=3.6',
 )
