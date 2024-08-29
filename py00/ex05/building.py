@@ -1,5 +1,5 @@
 import sys as sys
-import string as string
+# import string as string
 
 
 def count(line):
@@ -18,8 +18,7 @@ def count(line):
             spaces += 1
         elif i.isdigit():
             digits += 1
-    punctuation = string.punctuation
-    # class str -> "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+    punctuation = "\!\"\#\$\%\&\'\(\)\*\+\,\-\.\/\:\;\<\=\>\?\@\[\\\]\^\_\`\{\|\}\~"
     punct = [c for c in line if c in punctuation]
     # class list -> ['.']
     print(f'The text contains {length} characters:')
@@ -28,7 +27,6 @@ def count(line):
     print(f'{len(punct)} punctuation marks')
     print(f'{spaces} spaces')
     print(f'{digits} digits')
-    return 0
 
 
 def main():
@@ -48,7 +46,6 @@ def main():
     else:
         str = sys.argv[1]
         count(str)
-    return 0
 
 
 if __name__ == "__main__":
