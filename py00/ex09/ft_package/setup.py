@@ -8,7 +8,7 @@ setup(
     author_email="eagle@42.fr",
     url="https://github.com/eagle/ft_package",
     license="MIT",
-    packages=find_packages(),  # 또는 `packages=find_packages(where='src')` if using a 'src/' layout
+    packages=find_packages(),
     include_package_data=True,
     python_requires='>=3.6',
 )
