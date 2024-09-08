@@ -7,10 +7,10 @@ def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int |
     np_w = np.array(weight) # (2, )
 
     if np_h.shape != np_w.shape:
-        print(f'키 배열과 몸무게 배열의 개수가 다르다.')
+        raise ValueError("키 배열과 몸무게 배열의 형태가 같아야 한다.")
 
     if not (np.issubdtype(np_h.dtype, np.number) and np.issubdtype(np_w.dtype, np.number)):
-        print(f'키와 몸무게 배열의 값이 잘못되었다.')
+        raise ValueError("키 배열과 몸무게 배열의 값이 잘못되었다.")
 
     bmi = np_w / (np_h ** 2)
     # print(bmi, type(bmi))
