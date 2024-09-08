@@ -15,9 +15,10 @@ def ft_load(path: str) -> np.ndarray:
         img_arr = img_arr.reshape(400, 400)
         img_transposed = list(zip(*img_arr))
         img_transposed = np.array(img_transposed, dtype=np.int32)
-        print("New shape after slicing:", img_transposed.shape)
-        print(img_transposed)
-        plt.imshow(img_transposed, cmap='gray')
+        img_transposed_stacked = np.stack((img_transposed, img_transposed, img_transposed), axis=-1)
+        print("New shape after slicing:", img_transposed_stacked.shape)
+        print(img_transposed_stacked)
+        plt.imshow(img_transposed_stacked)
         plt.show()
         return img_arr
 
