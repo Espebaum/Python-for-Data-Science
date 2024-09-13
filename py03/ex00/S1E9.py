@@ -4,7 +4,8 @@ from abc import ABC, abstractmethod
 class   Character(ABC):
     """Your docstring for Class"""
     @abstractmethod
-        # your code here
+    def __init__(self) -> None:
+        pass
 
 
 class   Shark(Character):
